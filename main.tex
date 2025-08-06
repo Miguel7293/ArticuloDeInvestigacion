@@ -1,0 +1,83 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- Paquetes Esenciales ---
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+% --- Configuración de la Bibliografía ---
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{referencias.bib}
+
+% --- Configuración de los Márgenes ---
+\geometry{a4paper, margin=2.5cm}
+
+% --- Metadatos del Artículo ---
+\title{Título de Nuestra Investigación}
+\author{
+  Primer Autor\\
+  \small Universidad Nacional del Altiplano, Puno\\
+  \small \texttt{correo1@ejemplo.com}
+  \and
+  Segundo Autor\\
+  \small Afiliación\\
+  \small \texttt{correo2@ejemplo.com}
+}
+\date{6 de agosto de 2025}
+
+% ===================================================================
+% DOCUMENTO
+% ===================================================================
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+Aquí va el resumen del artículo (abstract). Debe ser un párrafo conciso que describa el objetivo, la metodología, los resultados clave y la conclusión principal de su investigación.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introducción}
+Aquí se presenta el contexto del problema y se citan trabajos previos, como un artículo \cite{autor2025articulo} o un libro \cite{autor2024libro}. El objetivo del estudio se declara al final de esta sección.
+
+\section{Metodología}
+Se describe en detalle cómo se realizó la investigación. Es común usar subsecciones para organizar la información sobre la recolección de datos y el análisis.
+
+\section{Resultados}
+Se presentan los hallazgos de manera objetiva, sin interpretación. Es ideal usar tablas (Cuadro \ref{tab:ejemplo}) y figuras (Figura \ref{fig:ejemplo}) para visualizar los datos.
+
+% --- Ejemplo de Figura ---
+\begin{figure}[h!]
+  \centering
+  % Para usar esto, pon una imagen en la carpeta "imagenes" y cambia el nombre del archivo
+  % \includegraphics[width=0.7\textwidth]{imagenes/tu_grafico.png}
+  \caption{Título descriptivo de la figura.}
+  \label{fig:ejemplo}
+\end{figure}
+
+% --- Ejemplo de Tabla ---
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|c|r|}
+    \hline
+    Variable de Estudio & Medida A & Medida B \\
+    \hline
+    Grupo 1 & 123 & 45.6 \\
+    Grupo 2 & 456 & 78.9 \\
+    \hline
+  \end{tabular}
+  \caption{Título descriptivo de la tabla.}
+  \label{tab:ejemplo}
+\end{table}
+
+\section{Discusión}
+Aquí se interpretan los resultados. ¿Qué significan? ¿Cómo se comparan con los de otros estudios? También se mencionan las limitaciones del trabajo.
+
+\section{Conclusiones}
+Se
